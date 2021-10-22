@@ -1,0 +1,29 @@
+﻿<Window x:Class="labo.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:labo"
+        xmlns:gif="http://wpfanimatedgif.codeplex.com"
+        mc:Ignorable="d"
+        Title="Peepo" Height="251" Width="500" >
+    <Grid>
+        <Grid.Background>
+            <VisualBrush>
+                <VisualBrush.Visual>
+                    <Image gif:ImageBehavior.RepeatBehavior="1"
+               gif:ImageBehavior.AnimatedSource="/virus-alert-downloading-virus.gif" >
+
+                    </Image>
+
+                </VisualBrush.Visual>
+            </VisualBrush>
+        </Grid.Background>
+        <TextBox x:Name="repoPath" HorizontalAlignment="Center" Margin="0,118,0,0" Text="" TextWrapping="Wrap" VerticalAlignment="Top" Width="454" Height="29" Padding="5,5,4,5"/>
+        <Button Content="Cloner Repertoire Git" HorizontalAlignment="Center" Margin="0,152,0,0" VerticalAlignment="Top" Height="31" Width="454" Click="CloneRepo"/>
+        <Label x:Name="label" HorizontalAlignment="Center" VerticalAlignment="Top" FontWeight="Bold" Height="24" Width="480" Margin="0,211,0,0"/>
+        <TextBox x:Name="folderPath" HorizontalAlignment="Center" Margin="0,48,0,0" Text="" TextWrapping="Wrap" VerticalAlignment="Top" Width="454" Height="29" Padding="5,5,5,5"/>
+        <Button Content="Parcourir" HorizontalAlignment="Center" Margin="0,82,0,0" VerticalAlignment="Top" Height="31" Width="454" Click="Button_Click"/>
+
+    </Grid>
+</Window>
